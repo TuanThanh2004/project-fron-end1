@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --color-one: hsl(231, 53%, 39%);
-    --color-two: #e2efec;
-    --color-thrid: #FFC800;
+    --color-one: hsl(231, 48%, 92%);
+    --color-two: white;
+    --color-thrid: #1c9ba7;
     --font:'Inter', sans-serif;
+    --font-contents-text: 'Dancing Script', cursive;
 }
 
 body {
     font-family: var(--font);
-    
+    background-color: white;
+    color: #2F4F4F;
 }
 
 a {
