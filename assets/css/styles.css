@@ -1,77 +1,104 @@
 /* header */
 .header {
-    position: fixed;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 /10%);
+    position: sticky;
     top: 0;
     left: 0;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%);
 }
 
-/* header top */
 .header-top {
-    background-color: var(--color-one);
-    font-size: 16px;
+    background: var(--color-one);
+    color: var(--color-two);
+    font-size: 18px;
     padding: 10px;
     text-align: center;
-    color: var(--color-thrid);
-    width: 100%;
-    font-weight: 600;
 }
-/* end header top */
 
+.header-main {
+    background-color: var(--color-three);
+}
 
-
-/* header main */
-.inner-wrap {
+.header-main .inner-wrap {
     display: flex;
-    justify-content:space-between;
+    /* 2 dòng dưới căn đều header menu theo hàng ngang */
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px 0;
 }
 
-.header-main .inner-wrap .span-logo{
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.header-main .inner-menu ul {
+.header-main .inner-logo {
     display: flex;
-    list-style-type: none;
+    font-weight: 800;
 }
 
-.header-main .inner-menu ul li {
-    padding-right: 15px;
-    /* font-size: 20px; */
-    font-weight: 600;
-}
-
-.header-main .inner-social ul {
-    list-style-type: none;
+.header-main .inner-logo a {
     display: flex;
-}
-.header-main .inner-social ul li {
-    padding-right: 15px;
-}
-.header-main .inner-social i {
-    font-size: 20px;
+    align-items: center;
 }
 
-/* end header-main */
-
-/* section-one */
-.section-one {
-    margin-top: 130px;
-}
-
-.section-one .inner-content h1 {
+.header-main .inner-logo span {
     font-size: 22px;
 }
 
-.inner-text {
-    font-family: var(--font-contents-text);
+.header-main .inner-logo img {
+    height: 48px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.header-main li {
+    list-style-type: none;
+}
+
+.header-main .inner-menu ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.header-main .inner-menu a {
+    font-weight: 600;
+}
+
+.header-main .inner-menu {
+    display: flex;
+}
+
+.header-main .inner-menu a {
+    font-size: 18px;
+    padding-left: 15px;
 }
 
 
+.header-main .inner-social ul {
+    display: flex;
+}
+
+.header-main .inner-social ul li{
+    font-size: 24px;
+    margin-left: 10px;
+}
+.header-main a {
+    color: var(--color-one);
+}
+
+/* end header */
+
+/* section one */
+
+.section-one {
+    margin-top: 30px;
+}
+
+.section-one .inner-wrap {
+    display: flex;
+}
+
+.section-one .inner-cooker {
+    display: flex;
+    max-width: 500px;
+}
 
 
-
-
+/* end section one */
