@@ -4,6 +4,7 @@
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 .header-top {
@@ -89,16 +90,108 @@
 
 .section-one {
     margin-top: 30px;
+    background-color: var(--color-four);
 }
 
 .section-one .inner-wrap {
     display: flex;
 }
 
-.section-one .inner-cooker {
+.section-one .inner-product {
     display: flex;
+    width: 500px;
     max-width: 500px;
+    min-width: 500px;
+    margin: 20px 20px;
+    padding: 10px;
+    background-color: white;
 }
 
+.section-one .inner-product .inner-content {
+    width: 50%;
+    margin-left: 20px;
+    position: relative;
+}
 
+.section-one .inner-product  .inner-content .inner-list {
+    position: absolute;
+    display: flex;
+    bottom: 60px;
+}
+
+.section-one .inner-product .inner-content .inner-item {
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.section-one .inner-product .inner-content .bt {
+    position: absolute;
+    bottom:15px;
+}
+
+.button {
+    background: var(--color-two);
+    color: var(--color-four);
+    padding: 12px 32px ;
+    border-radius: 45px;
+    border: 2px solid var(--color-two);
+}
+
+.button:hover {
+    color: var(--color-one);
+    background-color: white;
+}
+
+.section-one .inner-image {
+    width: 50%;
+    position: relative;
+}
+
+.section-one .inner-image img {
+    width: 100%;
+}
+
+.section-one .inner-image .inner-sale {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    background: var(--color-two);
+    color: var(--color-one);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-one .inner-image .inner-sale span:nth-child(1){
+    font-size: 18px;
+    font-weight: 300px;
+}
+
+.section-one .inner-image .inner-sale span:nth-child(2) {
+    font-size: 24px;
+    font-weight: 600;
+}
 /* end section one */
+
+
+
+
+
+
+
+/* footer */
+footer {
+    background-color: var(--color-three);
+    display: flex;
+    font-size: 16px;
+    padding: 10px;
+    justify-content: center;
+    font-weight: 600;
+    position: sticky;
+    bottom: 0;
+}
+/* end footer */
